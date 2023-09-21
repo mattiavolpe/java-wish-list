@@ -16,15 +16,10 @@ public class Main {
 		
 		ArrayCicler myArrayCicler = new ArrayCicler(myArray);
 		
-		for (int x = 0; x < myArray.length; x++) {
+		while (myArrayCicler.hasAncoraElementi()) {
 			System.out.println(myArrayCicler.getElementoSuccessivo());
-			
-			if (myArrayCicler.hasAncoraElementi())
-				System.out.println(myArrayCicler.hasAncoraElementi() + "\n");
-			else {
-				System.out.println("No more elements to show");
-				break;
-			}
 		}
+		
+		System.out.println("\nNo more elements to show");
 	}
 }

@@ -1,9 +1,8 @@
 package org.java.es3;
 
-public class ArrayCicler {
-	private static int counter = 0;
-	
+public class ArrayCicler {	
 	private int[] array = null;
+	private int counter = 0;
 	
 	public ArrayCicler(int[] array) {
 		this.array = array;
