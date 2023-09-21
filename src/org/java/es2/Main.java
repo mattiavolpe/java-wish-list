@@ -22,7 +22,7 @@ public class Main {
 		Map<Character, Integer> charactersCounterMap = new HashMap<>();
 		
 		for (int x = 0; x < word.length(); x++) {
-			char currentChar = word.charAt(x);
+			char currentChar = word.toLowerCase().charAt(x);
 			
 			if (charactersCounterMap.containsKey(currentChar)) {
 				charactersCounterMap.put(currentChar, charactersCounterMap.get(currentChar) + 1);
